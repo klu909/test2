@@ -6,3 +6,5 @@ jobs:
     requires: [~pr, ~commit]
     steps:
       - noop: echo hello
+      - http: echo http://github.com/
+      - https: echo https://github.com/
