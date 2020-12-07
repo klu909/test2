@@ -8,15 +8,15 @@ jobs:
       - noop: echo hello
       - http: echo http://github.com/
       - https: echo https://github.com/
-#   fail:
-#     requires: [main]
-#     steps:
-#       - noop: return 127
-#   pass:
-#     requires: [main]
-#     steps:
-#       - noop: echo hello
-#   join:
-#     requires: [pass, fail]
-#     steps:
-#       - noop: echo hello
+  fail:
+    requires: [main]
+    steps:
+      - noop: return 127
+  pass:
+    requires: [main]
+    steps:
+      - noop: echo hello
+  join:
+    requires: [pass, fail]
+    steps:
+      - noop: echo hello
