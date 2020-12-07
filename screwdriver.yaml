@@ -16,7 +16,7 @@ jobs:
     requires: [main]
     steps:
       - noop: echo hello
-  main:
+  join:
     requires: [pass, fail]
     steps:
       - noop: echo hello
