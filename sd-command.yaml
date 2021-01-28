@@ -1,0 +1,17 @@
+namespace: foo # Namespace for the command
+name: bar # Command name
+version: '1.0' # Major and Minor version number (patch is automatic), must be a string
+description: |
+  Lorem ipsum dolor sit amet.
+usage: |
+  sd-cmd exec foo/bar@<VERSION> <OPTION> <TARGET>
+  Options:
+          --config              config file
+          --debug               debug mode (default "false")
+          --host                super host
+          --log-level           set the logging level ("debug"|"info"|"warn"|"error"|"fatal") (default "info")
+  Target:                       path to file
+maintainer: foo@bar.com # Maintainer of the command
+format: binary # Format the command is in (binary, habitat)
+binary:
+    file: ./foobar.sh # Relative path to script or binary file from sd-command.yaml file or absolute path to it.
