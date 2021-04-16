@@ -1,6 +1,6 @@
 namespace: foo # Namespace for the command
 name: bar # Command name
-version: '5.1' # Major and Minor version number (patch is automatic), must be a string
+version: '5.2' # Major and Minor version number (patch is automatic), must be a string
 description: |
   Lorem ipsum dolor sit amet.
 usage: |
